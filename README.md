@@ -1,9 +1,9 @@
 
-✅ Elegant Tasks
+**✅ Elegant Tasks**
 
 A beautifully simple task manager to organize your day! 📝✨ Easily add, track, and filter tasks with an intuitive and elegant UI. Stay productive and focused with a seamless experience. 🚀
 
-#🌟 Features
+**🌟 Features**
 
 ✅ Add New Tasks – Quickly jot down tasks 📝
 ✅ Task Filters – Switch between All, Active, and Completed tasks 🔄

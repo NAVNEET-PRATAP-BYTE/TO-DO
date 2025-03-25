@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Tasks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="draggableContainer">
+        <div class="drag-handle">
+            <span class="drag-icon">↕️</span>
+            <h1>✅ Elegant Tasks</h1>
+        </div>
+        <p>A beautifully simple way to organize your day</p>
+        <div class="new-task">
+            <input type="text" id="taskInput" placeholder="New Task...">
+            <button onclick="addTask()">+ New Task</button>
+        </div>
+        <div class="filters">
+            <button class="active" onclick="filterTasks('all')">All</button>
+            <button onclick="filterTasks('active')">Active</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+        </div>
+        <ul id="taskList"></ul>
+        <p id="taskSummary">0 / 0 done</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

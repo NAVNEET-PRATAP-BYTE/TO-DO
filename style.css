@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #2d3748;
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    cursor: move;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.drag-handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    cursor: move;
+}
+
+.drag-icon {
+    font-size: 1.2em;
+    opacity: 0.7;
+}
+
+h1 {
+    color: #4a5568;
+    font-weight: 600;
+    margin: 0;
+    font-size: 2.2em;
+}
+
+.new-task {
+    display: flex;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+}
+
+button {
+    padding: 10px 15px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #764ba2;
+    transform: translateY(-2px);
+}
+
+.filters button {
+    background: transparent;
+    color: #4a5568;
+    border: 2px solid #e2e8f0;
+    margin: 0 5px;
+}
+
+.filters button.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.filters button:hover {
+    background: #764ba2;
+    color: white;
+    border-color: #764ba2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #a0aec0;
+}
+
+#taskSummary {
+    margin-top: 20px;
+    color: #667eea;
+    font-weight: 600;
+}
